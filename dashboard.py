@@ -80,7 +80,7 @@ c1, c2 = st.columns(2)
 continents = df['continent'].unique().tolist()
 cdf = df.groupby('continent')[years].sum() # group by continent and sum
 cdf['total'] = cdf.sum(axis=1)
-# c1.dataframe(cdf, use_container_width=True)
+c1.dataframe(cdf, use_container_width=True)
 figContinent = px.pie(cdf, names=cdf.index, values='total', 
                     title="Continent wise Immigration", 
                     hole=.5, 
