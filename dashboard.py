@@ -97,10 +97,3 @@ figMap = px.choropleth(df,
 st.plotly_chart(figMap, use_container_width=True)
 
 
-z=[[.1, .3, .5, .7, .9],
-    [1, .8, .6, .4, .2],
-    [.2, 0, .5, .7, .9],
-    [.9, .8, .4, .2, 0],
-    [.3, .4, .5, .7, 1]]
-page_title = ("showing data as analysis")
-heatmap = px.imshow(z, text_auto=True)
